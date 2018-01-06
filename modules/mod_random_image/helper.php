@@ -65,9 +65,17 @@ class ModRandomImageHelper
 				$width = $height * $coeff;
 			}
 		}
-
-		$image->width  = $width;
-		$image->height = $height;
+		
+		if($params->get('width') == '' || $params->get('height') == '')
+		{
+			$image->width  = $width . '%';
+			$image->height = $height . '%';
+		}
+		else
+		{
+			$image->width  = $width;
+			$image->height = $height;
+		}
 		$image->folder = str_replace('\\', '/', $image->folder);
 
 		return $image;

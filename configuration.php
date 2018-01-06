@@ -2,7 +2,7 @@
 class JConfig {
 	public $offline = '0';
 	public $offline_message = 'This site is down for maintenance.<br />Please check back again soon.';
-	public $sitename = 'Meow';
+	public $sitename = 'Debate Tournaments';
 	public $editor = 'tinymce';
 	public $list_limit = '20';
 	public $access = '1';
@@ -18,7 +18,7 @@ class JConfig {
 	public $secret = 'qwCFlmu2cIJvSlLlwDcwCGCjRl6nf350';
 	public $gzip = '0';
 	public $error_reporting = 'default';
-	public $helpurl = '';
+	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
 	public $ftp_host = '';
 	public $ftp_port = '21';
 	public $ftp_user = '';
@@ -49,7 +49,7 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = '/Applications/MAMP/htdocs/MyJoomlaWebsite/administrator/logs';
+	public $log_path = '/Applications/MAMP/htdocs/DebateTournaments/administrator/logs';
 	public $tmp_path = '/Applications/MAMP/htdocs/MyJoomlaWebsite/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
@@ -71,4 +71,29 @@ class JConfig {
 	public $mailonline = '1';
 	public $cache_platformprefix = '0';
 	public $shared_session = '0';
+	public $memcached_persist = '1';
+	public $memcached_compress = '0';
+	public $memcached_server_host = 'localhost';
+	public $memcached_server_port = '11211';
+	public $redis_persist = '1';
+	public $redis_server_host = 'localhost';
+	public $redis_server_port = '6379';
+	public $redis_server_auth = '';
+	public $redis_server_db = '0';
+	public $proxy_enable = '0';
+	public $proxy_host = '';
+	public $proxy_port = '';
+	public $proxy_user = '';
+	public $proxy_pass = '';
+	public $massmailoff = '0';
+	public $replyto = '';
+	public $replytoname = '';
+	public $session_memcache_server_host = 'localhost';
+	public $session_memcache_server_port = '11211';
+	public $session_memcached_server_host = 'localhost';
+	public $session_memcached_server_port = '11211';
+	public $session_redis_server_host = 'localhost';
+	public $session_redis_server_port = '6379';
+	public $frontediting = '1';
+	public $asset_id = '1';
 }
